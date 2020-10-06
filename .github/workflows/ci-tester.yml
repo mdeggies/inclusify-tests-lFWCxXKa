@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     # Job name is Greeting
-    name: Greetings master
+    name: Greetings main
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
@@ -13,10 +13,10 @@ jobs:
       - name: Hello world
         uses: actions/hello-world-javascript-action@v1
         with:
-          who-to-greet: 'Mona the master Octocat'
+          who-to-greet: 'Mona the main Octocat'
         id: hello
       # This step prints an output (time) from the previous step's action.
       - name: Echo the greeting's time
         run: echo 'The time was ${{ steps.hello.outputs.time }}.'
-      - name: Echo master
-        run: echo 'master master master master'
+      - name: Echo main
+        run: echo 'main main main main'

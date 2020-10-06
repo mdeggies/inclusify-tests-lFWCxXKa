@@ -3,4 +3,4 @@ builds:
     targets:
       - darwin_amd64
     hooks:
-      post: echo "master build"
+      post: echo "main build"
